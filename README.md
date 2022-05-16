@@ -15,8 +15,7 @@
 - Python 3.0 이상 설치
 - pip3 install Flask
 - pip3 install flask-restful
-- pip3 install flask-sqlalchemy ???
-- pip3 install sqlite3
+- python create_db.py > userInfo 테이블 생성
 - python app.py > 서버실행
 
 최종 구현된 범위

@@ -1,11 +1,7 @@
 import sqlite3 as sql
-import models
-from models import db
-from flask import request
-
 
 def create(request):
-    conn = sql.connect("db.sqlite")
+    conn = sql.connect("sqlite.db")
     cur = conn.cursor()
 
     id = request.json.get('id')
@@ -22,7 +18,7 @@ def create(request):
 
 
 def search(key, value, multi=None):
-    conn = sql.connect("db.sqlite")
+    conn = sql.connect("sqlite.db")
     cur = conn.cursor()
 
     where_field = ""
@@ -37,7 +33,7 @@ def search(key, value, multi=None):
         where_field = key+"=?"
         w_list = (value,)
 
-    cur.execute("select * from userInfo where "+where_field, w_list)
+    cur.execute("SELECT * FROM userInfo WHERE "+where_field, w_list)
     rows = cur.fetchone();
     conn.close()
 
@@ -45,7 +41,7 @@ def search(key, value, multi=None):
 
 
 def update(request):
-    conn = sql.connect("db.sqlite")
+    conn = sql.connect("sqlite.db")
     cur = conn.cursor()
 
     id = request.json.get('id')
