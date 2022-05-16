@@ -41,7 +41,3 @@ class Userinfo(Resource):
 
         result_data = return_set(status,msg,data)
         return jsonify(result_data)
-
-class Userinfo2(Resource):
-    def post(self, id):
-        return "ak"
