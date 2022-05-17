@@ -7,6 +7,7 @@
 
 [API 명세서]
 - swagger로 작성한 임의 명세서 입니다.
+- Base Url은 http://127.0.0.1:5000 입니다.
 - https://app.swaggerhub.com/apis-docs/gmldudrkd/Ably_API/1.0.0#/
 
 로컬에서 실행 방법
