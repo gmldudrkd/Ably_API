@@ -5,6 +5,10 @@
 - flask 프레임워크
 - flask-restful 모듈
 
+[API 명세서]
+- swagger로 작성한 임의 명세서 입니다.
+- https://app.swaggerhub.com/apis-docs/gmldudrkd/Ably_API/1.0.0#/
+
 로컬에서 실행 방법
 -
 [API test 프로그램]
@@ -24,7 +28,7 @@
 
 [사용자 회원가입]
 - 번호인증 적용
-- *입력불가 단어, 중복체크 유효성 적용*
+- 입력불가 단어, 중복체크 유효성 적용
 
 [로그인]
 - 식별가능정보 : 아이디, 패스워드
