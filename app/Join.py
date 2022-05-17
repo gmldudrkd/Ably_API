@@ -5,7 +5,6 @@ import re
 from app.function import *
 
 class Join(Resource):
-    # 로그인
     def post(self):
         data = ""
         id = request.json.get('id')

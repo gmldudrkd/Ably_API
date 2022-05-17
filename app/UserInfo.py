@@ -5,7 +5,6 @@ import re
 from app.function import *
 
 class Userinfo(Resource):
-    # 내정보 보기
     def post(self):
         id = request.json.get('id')
         phone_number = request.json.get('phone_number')

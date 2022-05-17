@@ -5,11 +5,6 @@
 - flask 프레임워크
 - flask-restful 모듈
 
-[API 명세서]
-- swagger로 작성한 임의 명세서 입니다.
-- Base Url은 http://127.0.0.1:5000 입니다.
-- https://app.swaggerhub.com/apis-docs/gmldudrkd/Ably_API/1.0.0#/
-
 로컬에서 실행 방법
 -
 [API test 프로그램]
@@ -21,7 +16,13 @@
 - pip3 install Flask
 - pip3 install flask-restful
 - python create_db.py > userInfo 테이블 생성
-- python app.py > 서버실행
+- python app.py
+
+API 명세서
+-
+- swagger로 작성한 임의 명세서 입니다.
+- Base Url은 http://127.0.0.1:5000 입니다.
+- https://app.swaggerhub.com/apis-docs/gmldudrkd/Ably_API/1.0.0#/
 
 최종 구현된 범위
 -

@@ -5,7 +5,6 @@ import re
 from app.function import *
 
 class Member(Resource):
-    # 회원가입
     def post(self):
         data = ""
 
